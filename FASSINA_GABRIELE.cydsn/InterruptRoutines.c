@@ -9,15 +9,14 @@
  *
  * ========================================
 */
-#include "interrupt_routines.h"
-extern char state;
-CY_ISR(Press_button_ISR)
-{
-    state++;
-    if (state == 8)
-        state = 1;
-    
+#include "InterruptRoutines.h"
+
+
+CY_ISR(press_button_ISR) {
+        
+        state ++;
+        if (state == 8)
+            state = 1;
     
 }
-
 /* [] END OF FILE */

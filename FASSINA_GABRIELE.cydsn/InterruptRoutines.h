@@ -9,16 +9,18 @@
  *
  * ========================================
 */
+
 #ifndef _INTERRUPT_ROUTINES_H_
     // Header guard
     #define _INTERRUPT_ROUTINES_H_
     
     #include "project.h"
+    extern int state;
     
     /**
     *   \brief ISR Code.
     */
-    CY_ISR_PROTO(Press_Button_ISR);
+    CY_ISR_PROTO(press_button_ISR);
     
 #endif
 /* [] END OF FILE */
