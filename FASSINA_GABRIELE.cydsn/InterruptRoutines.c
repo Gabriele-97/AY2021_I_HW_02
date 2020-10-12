@@ -14,9 +14,15 @@
 
 CY_ISR(press_button_ISR) {
         
+        
         state ++;
-        if (state == 8)
+        if (state == 8){
             state = 1;
-    
+        }
+        
+        
 }
+
+
+
 /* [] END OF FILE */
