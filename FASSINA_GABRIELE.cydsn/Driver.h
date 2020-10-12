@@ -9,16 +9,14 @@
  *
  * ========================================
 */
-// isr header
-#ifndef _INTERRUPT_ROUTINES_H_
-    // Header guard
-    #define _INTERRUPT_ROUTINES_H_
-    
+// This function sets the PWM parameters needed to generate each pattern
+#ifndef _DRIVER_H_
+    #define _DRIVER_H_
     #include "project.h"
-    extern int state;
+    extern int flag;
+    extern int DC7;
     
-    
-    CY_ISR_PROTO(press_button_ISR);
+    void RGBLed_WriteColor(uint16_t period, char modeR, char modeG, int compareR, int compareG );
     
     
 #endif

@@ -14,10 +14,12 @@
 
 CY_ISR(press_button_ISR) {
         
-        
+        //this is activated when the button is pressed
+        //debouncing is done via deidcated component
         state ++;
         if (state == 8){
             state = 1;
+        //if the state gets to the last available pattern, it returns to the first one
             
         }
         
